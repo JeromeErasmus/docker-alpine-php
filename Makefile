@@ -9,7 +9,7 @@
 ###############################################################################
 
 # config
-IMAGE=petehouston/docker-alpine-php
+IMAGE=jeromeerasmus/docker-alpine-php
 DOCKER=`which docker`
 SRC=`pwd`/src
 PHP_55=5.5
