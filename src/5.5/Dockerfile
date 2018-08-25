@@ -1,4 +1,4 @@
-FROM petehouston/docker-alpine-core
+FROM jeromeerasmus/docker-alpine-core
 
 MAINTAINER Pete Houston <contact@petehouston.com>
 
