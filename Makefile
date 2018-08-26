@@ -1,10 +1,9 @@
 ###############################################################################
-# The build script for petehouston/docker-alpine-php image
+# The build script for jeromeerasmus/docker-alpine-php image
 #
-# @image 		petehouston/docker-alpine-php
-# @author 		Pete Houston <contact@petehouston.com>
-# @github 		https://github.com/petehouston/docker-alpine-php/
-# @dockerhub 	https://hub.docker.com/r/petehouston/docker-alpine-php/
+# @image 		jeromeerasmus/docker-alpine-php
+# @github 		https://github.com/jeromeerasmus/docker-alpine-php/
+# @dockerhub 	https://hub.docker.com/r/jeromeerasmus/docker-alpine-php/
 #
 ###############################################################################
 
@@ -18,13 +17,13 @@ PHP_70=7.0
 
 # commands
 php-5.5:
-	@${DOCKER} build -f ${SRC}/${PHP_55}/Dockerfile -t ${IMAGE}:${PHP_55} ${SRC}/${PHP_55}/
+	@${DOCKER} build -f ${SRC}/${PHP_55}/Dockerfile -t ${IMAGE}:${PHP_55} ${SRC}/${PHP_55}/ --no-cache
 
 php-5.6:
-	@${DOCKER} build -f ${SRC}/${PHP_56}/Dockerfile -t ${IMAGE}:${PHP_56} ${SRC}/${PHP_56}/
+	@${DOCKER} build -f ${SRC}/${PHP_56}/Dockerfile -t ${IMAGE}:${PHP_56} ${SRC}/${PHP_56}/ --no-cache
 
 php-7.0:
-	@${DOCKER} build -f ${SRC}/${PHP_70}/Dockerfile -t ${IMAGE}:${PHP_70} ${SRC}/${PHP_70}/
+	@${DOCKER} build -f ${SRC}/${PHP_70}/Dockerfile -t ${IMAGE}:${PHP_70} ${SRC}/${PHP_70}/ --no-cache
 
 build: php-5.5 php-5.6 php-7.0
 

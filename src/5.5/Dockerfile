@@ -1,6 +1,6 @@
 FROM jeromeerasmus/docker-alpine-core
 
-MAINTAINER Pete Houston <contact@petehouston.com>
+MAINTAINER Jerome Erasmus
 
 ENV PHP_VERSION 5.5.35
 

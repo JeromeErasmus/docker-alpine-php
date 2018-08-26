@@ -3,7 +3,7 @@
 ################
 # CONFIGURATION
 ################
-PHP_IMAGE_NAME="petehouston/docker-alpine-php"
+PHP_IMAGE_NAME="jeromeerasmus/docker-alpine-php"
 PHP_VERSION_5_5="5.5"
 PHP_VERSION_5_6="5.6"
 PHP_VERSION_7_0="7.0"

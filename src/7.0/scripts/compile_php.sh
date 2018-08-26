@@ -20,6 +20,11 @@ wget https://github.com/php/php-src/archive/php-${PHP_VERSION}.tar.gz
 tar xzf php-${PHP_VERSION}.tar.gz
 cd php-src-php-${PHP_VERSION}
 
+#add Auto conf
+apk add autoconf
+
+apk add build-base
+
 # compile & build
 ./buildconf --force
 
