@@ -6,6 +6,12 @@ ENV PHP_VERSION 7.0.6
 
 RUN apk update && apk upgrade
 
+RUN apk add --no-cache py-pip bash 
+
+RUN  pip install --no-cache-dir --no-cache docker-compose
+
+RUN  apk add --no-cache jq
+
 RUN apk --no-cache add \
         php7 \
         php7-ctype \
@@ -36,12 +42,3 @@ RUN set -x \
     && adduser -u 82 -D -S -G www-data www-data
 
 CMD ["/usr/bin/php"]
-
-CMD  apk add openrc --no-cache
-CMD  apk add --no-cache jq
-
-# Add bash
-CMD  apk add --no-cache py-pip bash 
-
-# Add docker compose
-CMD  pip install --no-cache-dir docker-compose
