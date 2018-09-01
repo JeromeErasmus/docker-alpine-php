@@ -36,7 +36,9 @@ RUN apk --no-cache add \
         php7-xml \
         php7-xmlreader \
         php7-xmlwriter \
-        php7-zlib
+        php7-zlib \
+        php7-zip 
+
 RUN set -x \
     && addgroup -g 82 -S www-data \
     && adduser -u 82 -D -S -G www-data www-data
