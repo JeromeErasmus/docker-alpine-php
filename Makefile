@@ -7,6 +7,11 @@
 #
 ###############################################################################
 
+# this uses the Alpine image to run the tests on
+# to access the docker container you can use: docker run -it --rm -v ${PWD}:/home jeromeerasmus/docker-alpine-php-composer:7.0 /bin/sh
+# or 
+# docker run -it --rm jeromeerasmus/docker-alpine-php:7.0 /bin/bash
+
 # config
 IMAGE=jeromeerasmus/docker-alpine-php
 DOCKER=`which docker`
